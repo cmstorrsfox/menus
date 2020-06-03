@@ -1,5 +1,10 @@
-html {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+html {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -7,14 +12,48 @@ html {
 body {
     width: 100%;
     text-align: center;
-    display: block;
-    border: 1px solid black;
 }
 
 nav {
     display: block;
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     border: 1px solid black;
+    width: 15%;
+    background-color: purple;
+    overflow: hidden;
 }
+
+header {
+    display: block;
+    border: 1px solid black;
+    width: 100%;
+    background-color: blue;;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    background-color: green;
+}
+
+main {
+    width: 100%;
+}
+
+.column {
+    display: block;
+    position: relative;
+    float: left;
+    background-color: red;
+    border: 1px solid black;
+    width: 25%;
+    height: 200px;
+    margin: 0;
+}
+
+
